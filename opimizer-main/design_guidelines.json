@@ -1,0 +1,131 @@
+{
+  "project_name": "Portfolio Optimizer AI",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "theme": "The Quantum Ledger",
+    "archetype": "Fusion of Jewel Luxury & Performance Pro",
+    "core_principles": [
+      "Fusion over Imitation: Mix Finance Precision with Cyberpunk Aesthetics",
+      "Density is Beauty: High-density grids for data, breathing room for narrative",
+      "Darkness with Depth: No flat blacks; use texture, noise, and deep blues"
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Chivo, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "heading": "font-black (900) or font-light (300) - High Contrast",
+      "body": "font-normal (400)",
+      "bold": "font-bold (700)"
+    },
+    "usage": {
+      "h1": "text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase",
+      "h2": "text-3xl md:text-4xl font-bold tracking-tight",
+      "h3": "text-xl font-semibold tracking-normal text-muted-foreground",
+      "body": "text-base leading-relaxed text-slate-300",
+      "data": "font-mono text-sm tracking-wide text-emerald-400"
+    },
+    "installation": "Import fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=JetBrains+Mono:wght@400;700&family=Manrope:wght@300;400;600;800&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "background": "#050505",
+      "surface": "#0A0A0A",
+      "surface_highlight": "#121212",
+      "primary": "#6366F1",
+      "primary_glow": "rgba(99, 102, 241, 0.5)",
+      "secondary": "#10B981",
+      "accent": "#F97316",
+      "error": "#F43F5E",
+      "text_main": "#F8FAFC",
+      "text_muted": "#94A3B8",
+      "border": "rgba(255, 255, 255, 0.08)"
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "obsidian": "#050505",
+        "charcoal": "#0A0A0A",
+        "gunmetal": "#121212",
+        "electric-indigo": "#6366F1",
+        "neon-mint": "#10B981",
+        "cyber-rose": "#F43F5E"
+      }
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "style": "Crystal Glass",
+      "classes": "bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl"
+    },
+    "borders": {
+      "style": "Tracing Beam",
+      "classes": "border border-white/5 relative overflow-hidden"
+    },
+    "gradients": {
+      "glow": "bg-gradient-to-tr from-electric-indigo/20 via-transparent to-transparent",
+      "text_gradient": "bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400"
+    },
+    "texture": {
+      "noise": "Use a fixed noise overlay with opacity-5 pointer-events-none z-50 mix-blend-overlay"
+    }
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "Bento Grid Mode B: grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+      "marketing": "Tetris Grid: grid-cols-1 md:grid-cols-12 gap-8"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8 md:gap-12"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "Flat, sharp or minimal rounded-md. No heavy shadows. 1px border.",
+      "classes": "bg-charcoal/50 border-white/5 hover:border-electric-indigo/50 transition-colors duration-300"
+    },
+    "buttons": {
+      "primary": "bg-electric-indigo text-white font-bold tracking-wide px-8 py-3 rounded-sm hover:bg-electric-indigo/90 hover:shadow-[0_0_20px_rgba(99,102,241,0.4)] transition-all",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/5"
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn)",
+      "style": "Minimalist. Hide grid lines or make them extremely subtle (opacity 0.05). Use custom tooltips with glassmorphism."
+    },
+    "inputs": {
+      "style": "bg-gunmetal border-white/10 focus:border-electric-indigo focus:ring-1 focus:ring-electric-indigo/50 text-white placeholder:text-white/20"
+    }
+  },
+  "images": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1642751226315-e6dc6b47fd54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwZmluYW5jaWFsJTIwZGF0YSUyMHZpc3VhbGl6YXRpb24lMjBkYXJrJTIwbW9kZXxlbnwwfHx8fDE3Njk0MzM5Mzh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract Crypto Data Visualization",
+      "usage": "Hero section background with heavy overlay (bg-black/80)"
+    },
+    "feature_chart": {
+      "url": "https://images.unsplash.com/photo-1634097537825-b446635b2f7f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxmdXR1cmlzdGljJTIwZmluYW5jaWFsJTIwZGF0YSUyMHZpc3VhbGl6YXRpb24lMjBkYXJrJTIwbW9kZXxlbnwwfHx8fDE3Njk0MzM5Mzh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Neon Line Graph",
+      "usage": "Model Training section or 'About' card"
+    },
+    "workspace": {
+      "url": "https://images.unsplash.com/photo-1744782211816-c5224434614f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwzfHx0cmFkZXIlMjBhbmFseXppbmclMjBzdG9jayUyMG1hcmtldCUyMGNoYXJ0cyUyMG11bHRpcGxlJTIwc2NyZWVuc3xlbnwwfHx8fDE3Njk0MzM5NDF8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Trader Workspace",
+      "usage": "Landing page 'For Professionals' section"
+    }
+  },
+  "universal_guidelines": [
+    "DO NOT use gradients for backgrounds. Use solid deep colors + noise.",
+    "DO NOT use 'Inter' for headings. Use 'Chivo'.",
+    "DO NOT center text by default. Left align for strength.",
+    "ALWAYS add 'data-testid' to interactive elements.",
+    "ALWAYS use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Ensure all text has sufficient contrast (APCA standards).",
+    "Animations must be 'spring' based (framer-motion) or CSS transitions, never linear.",
+    "For 3D effects, use subtle CSS perspective or Recharts animations. Do not over-engineer with Three.js unless necessary for a specific 'wow' moment."
+  ],
+  "instructions_to_main_agent": "You are building a high-performance Portfolio Optimizer. The UI must feel like a professional tool, not a toy. Prioritize data density and clarity. Use the 'Bento Grid' layout for the dashboard. Implement the 'Model Training' view as a high-tech console with progress bars and live metrics. Use the provided image URLs for the landing page."
+}

@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-01-26T13:36:26.425861",
+  "summary": {
+    "total_tests": 11,
+    "passed_tests": 11,
+    "success_rate": 100.0
+  },
+  "test_results": [
+    {
+      "test": "API Health Check",
+      "success": true,
+      "details": "Status: 200, Response: {'message': 'Portfolio Optimizer API'}",
+      "timestamp": "2026-01-26T13:36:14.861518"
+    },
+    {
+      "test": "Asset Search - Stocks",
+      "success": true,
+      "details": "Status: 200, Found 1 assets",
+      "timestamp": "2026-01-26T13:36:14.900276"
+    },
+    {
+      "test": "Asset Search - Crypto",
+      "success": true,
+      "details": "Status: 200, Found 1 assets",
+      "timestamp": "2026-01-26T13:36:15.945882"
+    },
+    {
+      "test": "Data Fetch",
+      "success": true,
+      "details": "Status: 200, Data keys: ['data', 'symbols']",
+      "timestamp": "2026-01-26T13:36:17.474974"
+    },
+    {
+      "test": "Portfolio Optimization",
+      "success": true,
+      "details": "Status: 200, Keys: ['weights', 'expected_return', 'annualized_return', 'risk', 'annualized_risk', 'sharpe_ratio', 'annualized_sharpe', 'covariance_matrix'], Weights sum: 1.000",
+      "timestamp": "2026-01-26T13:36:18.790276"
+    },
+    {
+      "test": "Backtesting",
+      "success": true,
+      "details": "Status: 200, Keys: ['total_return', 'cagr', 'volatility', 'sharpe_ratio', 'sortino_ratio', 'max_drawdown', 'win_rate', 'best_day', 'worst_day', 'cumulative_returns', 'daily_returns']",
+      "timestamp": "2026-01-26T13:36:19.893819"
+    },
+    {
+      "test": "ML Training Start",
+      "success": true,
+      "details": "Status: 200, Task ID: a2dcf688-2897-402c-a989-348ce4f5c03e, Status: completed",
+      "timestamp": "2026-01-26T13:36:22.984951"
+    },
+    {
+      "test": "Portfolio History",
+      "success": true,
+      "details": "Status: 200, History items: 1",
+      "timestamp": "2026-01-26T13:36:24.023152"
+    },
+    {
+      "test": "Rebalance Frequency - daily",
+      "success": true,
+      "details": "Status: 200, Frequency: daily",
+      "timestamp": "2026-01-26T13:36:25.289132"
+    },
+    {
+      "test": "Rebalance Frequency - weekly",
+      "success": true,
+      "details": "Status: 200, Frequency: weekly",
+      "timestamp": "2026-01-26T13:36:25.357217"
+    },
+    {
+      "test": "Rebalance Frequency - on-demand",
+      "success": true,
+      "details": "Status: 200, Frequency: on-demand",
+      "timestamp": "2026-01-26T13:36:25.423734"
+    }
+  ]
+}

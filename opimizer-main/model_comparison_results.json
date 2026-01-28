@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-01-28T22:18:34.359064",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "GOOGL"
+  ],
+  "date_range": "2020-01-01 to 2026-01-28",
+  "data_points": 1504,
+  "models": {
+    "Linear Regression": {
+      "train_mse": 0.00028325954590041494,
+      "test_mse": 0.0002966779941696654,
+      "train_r2": 0.06703838532223882,
+      "test_r2": 0.02326592746180789,
+      "train_mae": 0.012304842525705349,
+      "test_mae": 0.011996571283299434,
+      "test_direction_accuracy": 0.5049833887043189,
+      "train_direction_accuracy": 0.5361596009975063,
+      "downside_mse": 0.00033737519684869354,
+      "upside_r2": -0.8054152990912731,
+      "max_error": 0.11007795096417908,
+      "information_ratio": 1.3518215062513932,
+      "combined_score": 0.33709668607634546
+    },
+    "Ridge Regression": {
+      "train_mse": 0.00029531781066021557,
+      "test_mse": 0.0002982950575335651,
+      "train_r2": 0.027322519349373575,
+      "test_r2": 0.01794217269733822,
+      "train_mae": 0.01223806905835721,
+      "test_mae": 0.011636112199151432,
+      "test_direction_accuracy": 0.5448504983388704,
+      "train_direction_accuracy": 0.5311720698254364,
+      "downside_mse": 0.0003504933390946573,
+      "upside_r2": -0.756111314304895,
+      "max_error": 0.1262215815337982,
+      "information_ratio": 1.0396839319288869,
+      "combined_score": 0.35086595566342244
+    },
+    "Lasso Regression": {
+      "train_mse": 0.0003036132906692532,
+      "test_mse": 0.00030432972215721824,
+      "train_r2": 0.0,
+      "test_r2": -0.0019253694530647625,
+      "train_mae": 0.012287976836913553,
+      "test_mae": 0.011706987953483844,
+      "test_direction_accuracy": 0.5647840531561462,
+      "train_direction_accuracy": 0.544472152950956,
+      "downside_mse": 0.0003513857528151601,
+      "upside_r2": -0.8241398408310494,
+      "max_error": 0.13169426922758007,
+      "information_ratio": -0.11047387284184959,
+      "combined_score": 0.17211686559381204
+    },
+    "Elastic Net": {
+      "train_mse": 0.0003036132906692532,
+      "test_mse": 0.00030432972215721824,
+      "train_r2": 0.0,
+      "test_r2": -0.0019253694530647625,
+      "train_mae": 0.012287976836913553,
+      "test_mae": 0.011706987953483844,
+      "test_direction_accuracy": 0.5647840531561462,
+      "train_direction_accuracy": 0.544472152950956,
+      "downside_mse": 0.0003513857528151601,
+      "upside_r2": -0.8241398408310494,
+      "max_error": 0.13169426922758007,
+      "information_ratio": -0.11047387284184959,
+      "combined_score": 0.17211686559381204
+    },
+    "Random Forest": {
+      "train_mse": 0.00016895308717265593,
+      "test_mse": 0.00027520185976352755,
+      "train_r2": 0.4435253911308247,
+      "test_r2": 0.09397043751349887,
+      "train_mae": 0.009973380194798263,
+      "test_mae": 0.011541577661425934,
+      "test_direction_accuracy": 0.53156146179402,
+      "train_direction_accuracy": 0.7190357439733999,
+      "downside_mse": 0.00030080271941253754,
+      "upside_r2": -0.7384357413308194,
+      "max_error": 0.10348309718084549,
+      "information_ratio": 5.669111435493803,
+      "combined_score": 0.37367790186934824
+    },
+    "Gradient Boosting": {
+      "train_mse": 4.7096653099397796e-05,
+      "test_mse": 0.00029510214288987587,
+      "train_r2": 0.8448794748227824,
+      "test_r2": 0.02845400230548223,
+      "train_mae": 0.00529923091947724,
+      "test_mae": 0.012133278977191199,
+      "test_direction_accuracy": 0.4983388704318937,
+      "train_direction_accuracy": 0.8811305070656692,
+      "downside_mse": 0.00032068176112025316,
+      "upside_r2": -0.8739634273879116,
+      "max_error": 0.11791422313004155,
+      "information_ratio": 1.6586019382417034,
+      "combined_score": 0.3270453243176127
+    },
+    "XGBoost": {
+      "train_mse": 4.543439833690181e-05,
+      "test_mse": 0.0002996421080774725,
+      "train_r2": 0.8503543825873005,
+      "test_r2": 0.013507363950070572,
+      "train_mae": 0.0050812474718737325,
+      "test_mae": 0.01221136702875989,
+      "test_direction_accuracy": 0.4717607973421927,
+      "train_direction_accuracy": 0.8969243557772236,
+      "downside_mse": 0.0003309852060773356,
+      "upside_r2": -0.8746350247399675,
+      "max_error": 0.10681750290660877,
+      "information_ratio": 0.7809230574444677,
+      "combined_score": 0.2842813765179193
+    }
+  },
+  "best_model": {
+    "name": "Random Forest",
+    "metrics": {
+      "train_mse": 0.00016895308717265593,
+      "test_mse": 0.00027520185976352755,
+      "train_r2": 0.4435253911308247,
+      "test_r2": 0.09397043751349887,
+      "train_mae": 0.009973380194798263,
+      "test_mae": 0.011541577661425934,
+      "test_direction_accuracy": 0.53156146179402,
+      "train_direction_accuracy": 0.7190357439733999,
+      "downside_mse": 0.00030080271941253754,
+      "upside_r2": -0.7384357413308194,
+      "max_error": 0.10348309718084549,
+      "information_ratio": 5.669111435493803,
+      "combined_score": 0.37367790186934824
+    },
+    "selection_criteria": "Combined score (accuracy, direction, risk-adjusted)"
+  },
+  "formulas_used": {
+    "mse": "MSE = (1/n)\u03a3(pi - p\u0302i)\u00b2",
+    "direction_accuracy": "Proportion of correct up/down predictions",
+    "downside_mse": "MSE for negative returns only",
+    "information_ratio": "R\u00b2 / Tracking Error"
+  }
+}
