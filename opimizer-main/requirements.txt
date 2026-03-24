@@ -1,0 +1,9 @@
+flask
+pandas
+numpy
+yfinance
+cvxpy
+scikit-learn
+xgboost
+python-binance
+polygon-api-client
